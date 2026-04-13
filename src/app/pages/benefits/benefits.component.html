@@ -1,0 +1,135 @@
+
+<div class="relative overflow-hidden">
+
+  <!-- Background Glow -->
+  <div class="absolute inset-0 -z-10">
+
+    <!-- gradient base -->
+    <div class="absolute inset-0 
+                bg-linear-to-br from-[#0b0f1a] via-[#0f172a] to-[#020617]">
+    </div>
+
+    <!-- pink glow -->
+    <div class="absolute top-[-20%] left-[-10%] w-125 h-125 
+                bg-rose-500/20 blur-[120px] rounded-full">
+    </div>
+
+    <!-- purple glow -->
+    <div class="absolute bottom-[-20%] right-[-10%] w-125 h-125 
+                bg-purple-500/20 blur-[120px] rounded-full">
+    </div>
+
+  </div>
+
+
+
+
+<section class="max-w-6xl mx-auto px-6 py-24 text-white">
+    
+
+  <!-- Title -->
+  <h2 class="text-4xl font-bold mb-10">Benefits</h2>
+
+  <!-- Tabs -->
+  <div class="flex gap-4 mb-10 flex-wrap">
+
+    <button (click)="setTab('access')"
+      [ngClass]="activeTab === 'access' ? activeClass : defaultClass">
+      Access
+    </button>
+
+    <button (click)="setTab('rates')"
+      [ngClass]="activeTab === 'rates' ? activeClass : defaultClass">
+      Rates
+    </button>
+
+    <button (click)="setTab('support')"
+      [ngClass]="activeTab === 'support' ? activeClass : defaultClass">
+      Support
+    </button>
+
+    <button (click)="setTab('demo')"
+      [ngClass]="activeTab === 'demo' ? activeClass : defaultClass">
+      Demo
+    </button>
+
+  </div>
+
+  <!-- Content -->
+  <div class="relative overflow-hidden">
+
+    <!-- ACCESS -->
+    @if (activeTab === 'access') {
+      <div class="animate-slide">
+
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+
+          <div>
+            <h3 class="text-2xl font-bold mb-4 text-rose-400">
+              Access Anytime, Anywhere
+            </h3>
+
+            <p class="text-white/60 mb-4">
+              No downloads. No limits. Your data is always available in real time.
+            </p>
+
+            <p class="text-white/50 text-sm">
+              Work seamlessly across devices with full flexibility.
+            </p>
+          </div>
+
+          <img src="/Benefits2.jpg" class="rounded-2xl shadow-xl">
+        </div>
+
+      </div>
+    }
+
+    <!-- RATES -->
+    @if (activeTab === 'rates') {
+      <div class="animate-slide">
+
+        <h3 class="text-2xl font-bold text-pink-400 mb-4">
+          Flexible Pricing
+        </h3>
+
+        <p class="text-white/60">
+          Choose pricing that fits your business and scale as you grow.
+        </p>
+
+      </div>
+    }
+
+    <!-- SUPPORT -->
+    @if (activeTab === 'support') {
+      <div class="animate-slide">
+
+        <h3 class="text-2xl font-bold text-purple-400 mb-4">
+          24/7 Support
+        </h3>
+
+        <p class="text-white/60">
+          Our team is always ready to help you succeed.
+        </p>
+
+      </div>
+    }
+
+    <!-- DEMO -->
+    @if (activeTab === 'demo') {
+      <div class="animate-slide">
+
+        <h3 class="text-2xl font-bold text-rose-400 mb-4">
+          Book a Demo
+        </h3>
+
+    <p class="text-white/60">
+  Experience the power of smarter media management firsthand.
+</p>
+
+      </div>
+    }
+
+  </div>
+
+</section>
+</div>

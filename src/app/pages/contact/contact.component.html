@@ -1,0 +1,127 @@
+
+
+<div class="relative overflow-hidden">
+
+  <!-- Background Glow -->
+  <div class="absolute inset-0 -z-10">
+
+    <!-- gradient base -->
+    <div class="absolute inset-0 
+                bg-linear-to-br from-[#0b0f1a] via-[#0f172a] to-[#020617]">
+    </div>
+
+    <!-- pink glow -->
+    <div class="absolute top-[-20%] left-[-10%] w-125 h-125 
+                bg-rose-500/20 blur-[120px] rounded-full">
+    </div>
+
+    <!-- purple glow -->
+    <div class="absolute bottom-[-20%] right-[-10%] w-125 h-125 
+                bg-purple-500/20 blur-[120px] rounded-full">
+    </div>
+
+  </div>
+
+<section class="relative overflow-hidden py-24 px-6 text-white">
+
+
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute top-[-10%] left-[10%] w-87.5 h-87.5 bg-pink-500/20 blur-[120px] rounded-full"></div>
+    <div class="absolute bottom-[-10%] right-[10%] w-87.5 h-87.5 bg-rose-500/20 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- 🖼️ IMAGE SIDE -->
+    <div class="animate-slide-right relative group">
+
+      <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+
+        <img src="/contact us.jpg"
+             class="w-full h-100 object-cover transition duration-700 group-hover:scale-105">
+
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- glow -->
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500
+                    bg-linear-to-br from-rose-500/20 via-pink-500/10 to-purple-500/10 blur-xl">
+        </div>
+
+        <!-- text -->
+        <div class="absolute bottom-6 left-6 text-white z-10">
+          <p class="text-lg font-semibold">Let’s build something great</p>
+          <p class="text-sm text-white/70">We’re ready when you are</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 📝 FORM -->
+    <div class="animate-slide-left">
+
+      <form class="group relative p-8 rounded-3xl 
+                   bg-white/5 backdrop-blur-xl border border-white/10
+                   transition-all duration-500
+                   hover:shadow-[0_0_80px_rgba(244,63,94,0.5)]
+                   hover:-translate-y-1">
+
+        <!-- glow -->
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition
+                    bg-linear-to-br from-rose-500/30 via-pink-500/20 to-purple-500/10 blur-2xl">
+        </div>
+
+        <div class="relative z-10 space-y-5">
+
+          <!-- Name -->
+          <div class="relative">
+            <i class="fa-solid fa-user absolute top-1/2 left-4 -translate-y-1/2 text-white/40"></i>
+            <input type="text" placeholder="Your Name"
+              class="w-full pl-10 pr-4 py-3 rounded-xl bg-white/10 border border-white/10 
+                     text-white placeholder-white/50 focus:outline-none 
+                     focus:border-rose-400 transition">
+          </div>
+
+          <!-- Email -->
+          <div class="relative">
+            <i class="fa-solid fa-envelope absolute top-1/2 left-4 -translate-y-1/2 text-white/40"></i>
+            <input type="email" placeholder="Email Address"
+              class="w-full pl-10 pr-4 py-3 rounded-xl bg-white/10 border border-white/10 
+                     text-white placeholder-white/50 focus:outline-none 
+                     focus:border-pink-400 transition">
+          </div>
+
+          <!-- Subject -->
+          <div class="relative">
+            <i class="fa-solid fa-pen absolute top-1/2 left-4 -translate-y-1/2 text-white/40"></i>
+            <input type="text" placeholder="Subject"
+              class="w-full pl-10 pr-4 py-3 rounded-xl bg-white/10 border border-white/10 
+                     text-white placeholder-white/50 focus:outline-none 
+                     focus:border-purple-400 transition">
+          </div>
+
+          <!-- Message -->
+          <textarea rows="4" placeholder="Your Message..."
+            class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/10 
+                   text-white placeholder-white/50 focus:outline-none 
+                   focus:border-rose-400 transition"></textarea>
+
+          <!-- Button -->
+          <button type="submit"
+            class="w-full py-3 rounded-xl font-semibold
+                   bg-linear-to-r from-rose-500 via-pink-500 to-purple-500
+                   hover:scale-[1.03] transition shadow-lg">
+            Send Message 
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+</div>
